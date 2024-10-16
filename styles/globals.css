@@ -1,0 +1,153 @@
+:root {
+  /* --mainBG: #eeeff5; */
+  /* --mainBG: #effaf4; */
+  --mainBG: #ecf4fb;
+  --primary: #1976d2;
+  --primary75: #639bcf;
+  --primary50: #92bce2;
+  --primary25: #cadef1;
+  --primary15: #e3eef8;
+  --primary5: #eff4f8;
+  --secondary: #111024;
+  --secondary75: #4a4957;
+  --secondary60: #63627d;
+  --secondary50: #7e7e8a;
+  --secondary35: #9c9cb5;
+  --secondary25: #bebdc6;
+  --secondary15: #dbdbe5;
+  --secondary5: #ebebf2;
+  --success: #12b05b;
+  --success75: #44c37e;
+  --success50: #84cda6;
+  --success25: #bde2ce;
+  --success15: #e0f4e9;
+  --success5: #effaf4;
+  --success1: #f6faf8;
+  --error: #d62121;
+  --red: #ffeeee;
+  --error75: #d75858;
+  --error50: #d57f7f;
+  --error25: rgb(247, 185, 185);
+  --error15: rgb(250, 205, 205);
+  --error5: rgb(250, 225, 225);
+  --footer: #384047;
+  --golden: #ffbf00;
+  --warning: #fff8eb;
+  --warningdark: #eedfc5;
+  --datewarning: #ff9800;
+  --goldenDark: #685707;
+  --bronze: #904830;
+  --bronzeDark: #120a01;
+  --silver: #cecece;
+  --silverDark: #363535;
+  --framesChart: #9353fd;
+  --cutBendChart: #5640d2;
+  --smallPartsChart: #db6e33;
+  --finishingChart: #e6424d;
+  --totalChart: #666060;
+  --mainBorder: 0.9px solid var(--success15);
+  --cardBorder: 1px solid var(--secondary15);
+  --cardBorderDark: 1px solid var(--secondary50);
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 100vh;
+}
+
+.swiper-wrapper {
+  /* background-color: red; */
+  height: 1rem;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+
+/* Commenting out Swiper navigation button styles to avoid conflicts */
+.swiper-button-prev,
+.swiper-button-next {
+  /*
+  min-width: "100%";
+
+  position: absolute;
+  top: 1.95rem !important;
+  background-color: #1976d2;
+  color: white !important;
+  width: 3.6rem !important;
+  height: 3.6rem !important;
+  border-radius: 1rem !important;
+  */
+}
+
+.swiper-button-prev {
+  /* left: 27.5% !important; */
+}
+
+.swiper-button-next {
+  /* right: 27.5% !important; */
+}
+
+/* Commenting out custom-next-button styles as we'll handle navigation within the component */
+.custom-next-button {
+  /* background-color: red !important;
+  font-size: 33rem !important; */
+}
+.custom-calendar .rbc-header {
+  text-align: center; /* Center-align the text */
+  /* Optional: Adjust font size if needed */
+  font-size: 1em;
+  height: 99px;
+}
+
+.custom-calendar .rbc-header + .rbc-header {
+  border-left: 1px solid #ddd; /* Add border between headers */
+}
+
+.custom-calendar .rbc-time-view {
+  /* Ensure the time view has adequate height */
+  height: 1000px;
+}
+
+.custom-calendar .rbc-event {
+  text-overflow: wrap;
+  font-size: 0.8em; /* Smaller font size */
+  padding: 2px 4px; /* Reduce padding */
+  
+  height: auto; /* Allow height to adjust based on content */
+}
+
+/* Additional styles for total hours */
+.custom-calendar .rbc-header div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,17 @@
+.swiper-button-prev11 {
+  min-width: "100%";
+
+  position: absolute;
+  top: 10.95rem !important;
+  background-color: #1976d2;
+  color: white !important;
+  width: 3.6rem !important;
+  height: 3.6rem !important;
+  border-radius: 1rem !important;
+}
+.swiper-button-prev {
+  left: 37.5% !important;
+}
+.swiper-button-next {
+  right: 37.5% !important;
+}
